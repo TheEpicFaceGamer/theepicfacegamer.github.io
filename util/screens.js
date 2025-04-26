@@ -11,32 +11,23 @@ export async function boot() {
 	clear();
 
 	await type("Welcome to ECMA industries(TM) terminal", {
-		initialWait: 3000
+		initialWait: 500
 	});
 
 	await type(["> SET TERMINAL/BOOT", "Loading........................"], {
-		lineWait: 1000
+		lineWait: 500
 	});
 	await type(
 		[
-			".....",
-			"Please wait........",
-			"..........",
-			"...",
-			".",
-			".",
-			".",
-			".",
-			"."
+
+			"Please wait........"
 		],
 		{ lineWait: 250 }
 	);
 
-	await type(["OK.", " "]);
-
 	await type(["> SET TERMINAL/LOGON", "USER AUTHENTICATION CHECK"], {
-		lineWait: 1000,
-		finalWait: 3000
+		lineWait: 500,
+		finalWait: 500
 	});
 
 	await pause();

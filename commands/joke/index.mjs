@@ -1,15 +1,16 @@
+import { clear } from '../../util/screens.js';
+var screen = document.querySelector(".terminal");
 var myVideo = document.getElementById("myVid");
+clear();
+screen.style.display = 'none';
+myVideo.style.display = 'block';
 function playVideo() { 
  myVideo.play(); 
 } 
-function pauseVideo() { 
- myVideo.pause(); 
-} 
 playVideo()
+
 const output = [
-	"I would tell you a UDP joke...",
-	" ",
-	"...but you might not get it"
+" "
 ];
 
 export { output };
